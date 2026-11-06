@@ -1,4 +1,4 @@
-from dvd import DigitalVideoDisc
+from aims.dvd import DigitalVideoDisc
 
 MAX_NUMBERS_ORDERED = 20
 
