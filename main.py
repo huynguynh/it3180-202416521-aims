@@ -1,8 +1,10 @@
+from aims import __version__
 from aims.dvd import DigitalVideoDisc
 from aims.cart import Cart
 
 
 def main():
+    print(f"AIMS-mini v{__version__}")
     cart = Cart()
     dvd1 = DigitalVideoDisc("The Lion King", "Animation", 19.95, "Roger Allers", 87)
     dvd2 = DigitalVideoDisc("Star Wars", "Science Fiction", 24.95, "George Lucas", 124)
