@@ -10,4 +10,4 @@ def search_by_category(
 def search_by_title(
     items: list[DigitalVideoDisc], keyword: str
 ) -> list[DigitalVideoDisc]:
-    return [dvd for dvd in items if keyword in dvd.title]
+    return [dvd for dvd in items if keyword.lower() in dvd.title.lower()]
