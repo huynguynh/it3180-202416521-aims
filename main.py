@@ -12,6 +12,7 @@ def main():
     cart.add_dvd(dvd2)
     cart.add_dvd(dvd3)
 
+    cart.print_cart()
     print(f"Total cost: {cart.total_cost():.2f} $")
 
 
