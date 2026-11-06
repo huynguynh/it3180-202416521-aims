@@ -17,3 +17,13 @@ class Cart:
 
     def total_cost(self) -> float:
         return round(sum(item.cost for item in self.items), 2)
+
+    def print_cart(self) -> None:
+        print("***********************CART***********************")
+        for idx, dvd in enumerate(self.items, start=1):
+            print(
+                f"{idx}. DVD - {dvd.title} - {dvd.category} - "
+                f"{dvd.director} - {dvd.length}: {dvd.cost:.2f} $"
+            )
+        print(f"Total cost: {self.total_cost():.2f} $")
+        print("**************************************************")
