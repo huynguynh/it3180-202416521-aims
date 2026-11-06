@@ -18,6 +18,9 @@ class Cart:
     def total_cost(self) -> float:
         return round(sum(item.cost for item in self.items), 2)
 
+    def total_cost_with_discount(self, percent: float) -> float:
+        return round(self.total_cost() * percent / 100, 2)
+
     def print_cart(self) -> None:
         print("***********************CART***********************")
         if not self.items:
