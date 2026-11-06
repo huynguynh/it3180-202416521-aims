@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- `Cart.sort_by_title()` and `Cart.sort_by_cost()` to sort DVDs in the cart.
+
 ## [1.0.0] - 2026-11-06
 
 ### Added
